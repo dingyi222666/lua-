@@ -6,323 +6,1102 @@
 <body>
 
 <p>
-【项目表】{"一个侧滑布局","test2","test3"}【项目表】
+【项目表】{"精仿一个木函按钮","幽灵助手轮翻精美布局"}【项目表】
 【数据表】
 tab6={}
-tab6["一个侧滑布局"]=[[
+tab6["精仿一个木函按钮"]=[[
 --程序启动时会执行的事件
---导入神马玩意，我也不懂，不要删除就行
-require"import"
-import "android.app.*"
-import "android.os.*"
-import "android.widget.*"
-import "android.view.*"
-import "android.text.*"
-sidebar2=(loadlayout(
-{--定义侧滑栏全局布局
-  LinearLayout,
-  layout_width="fill",
-  layout_height="fill",
-  orientation="vertical",
-  backgroundColor="#FFFFFF",
- {
-ImageView;--图片控件
-src='https://i.loli.net/2019/05/20/5ce19d759837665725.png';--图片路径
-layout_width='fill';--图片宽度
-layout_height='35%h';--图片高度
---layout_gravity='top';--重力属性
-layout_marginTop='-30dp';
-
-}; 
+--仿一个木函按钮布局
+shamrock=
+{
+  LinearLayout;
+  orientation="vertical";
+  layout_height="fill";
+  layout_width="fill";
+  BackgroundColor="#FFFFFF";
   {
-    TextView;
-    layout_width="fill",
-    text="标题一",
-    textSize="12sp",
-    gravity="left",
-    textColor="#FF0083DB",
-    layout_marginTop="10dp",
-    layout_marginLeft="10dp",
-  },
-{
-  LinearLayout,
-  layout_width="fill",
-  layout_height="fill",
-  orientation="vertical",
-{
-RelativeLayout;
-layout_width="fill";
-layout_height="fill";
-layout_marginTop="10dp";
-{
-LinearLayout;
-background="#ffffffff";
-layout_height="50dp";
-layout_width="fill";
-{
-LinearLayout;
-id="xm1";
-layout_height="fill";
-layout_width="fill";
-{
-ImageView,
-layout_width="30dp",
-layout_height="30dp",
-layout_marginLeft="10dp",
-src="drawable/bb.png",
-ColorFilter="#FF1157BB",
-layout_marginTop="10dp",
-},
-{
-TextView;
-layout_marginLeft="80dp";
-text="项目一";
-layout_gravity="center";
-textColor="#000000";
+    ScrollView,--纵向滚动
+    layout_width='fill';--宽
+    layout_height='fill';--高
+    {
+      LinearLayout;
+      orientation="horizontal";
+      Elevation="300dp";
+      layout_width="fill";
+      layout_height="100%h";
+      {
+        LinearLayout;
+        orientation="vertical";
+        layout_width="48%w";
+        layout_height="fill";
+        layout_marginLeft="2%w";
+        --第一列
+        {
+          CardView;
+          layout_gravity="center";
+          layout_marginTop="2%h"; 
+          elevation="0dp";
+          layout_width="45%w";
+          layout_height="45dp";
+          cardBackgroundColor="#FFF7F7F7";
+          radius="5dp";
+          {
+            LinearLayout;
+            layout_margin="0dp";
+            layout_width="fill";
+            layout_height="fill";
+            gravity="center"; 
+            id="two";
+            {
+              TextView;
+              textSize="14sp";
+              text="2048",
+              textColor="#333333";
+            };
+          };
+        },
+        {
+          CardView;
+          layout_gravity="center";
+          layout_marginTop="2%h"; 
+          elevation="0dp";
+          layout_width="45%w";
+          layout_height="45dp";
+          cardBackgroundColor="#FFF7F7F7";
+          radius="5dp";
+          {
+            LinearLayout;
+            layout_margin="0dp";
+            layout_width="fill";
+            layout_height="fill";
+            gravity="center"; 
+            id="bird";
+            {
+              TextView;
+              textSize="14sp";
+              text="像素小鸟",
+              textColor="#333333";
+            };
+          };
+        },
+        {
+          CardView;
+          layout_gravity="center";
+          layout_marginTop="2%h"; 
+          elevation="0dp";
+          layout_width="45%w";
+          layout_height="45dp";
+          cardBackgroundColor="#FFF7F7F7";
+          radius="5dp";
+          {
+            LinearLayout;
+            layout_margin="0dp";
+            layout_width="fill";
+            layout_height="fill";
+            gravity="center"; 
+            id="needle";
+            {
+              TextView;
+              textSize="14sp";
+              text="见缝插针",
+              textColor="#333333";
+            };
+          };
+        },
+        {
+          CardView;
+          layout_gravity="center";
+          layout_marginTop="2%h"; 
+          elevation="0dp";
+          layout_width="45%w";
+          layout_height="45dp";
+          cardBackgroundColor="#FFF7F7F7";
+          radius="5dp";
+          {
+            LinearLayout;
+            layout_margin="0dp";
+            layout_width="fill";
+            layout_height="fill";
+            gravity="center"; 
+            id="line";
+            {
+              TextView;
+              textSize="14sp";
+              text="命悬一线",
+              textColor="#333333";
+            };
+          };
+        },
+        {
+          CardView;
+          layout_gravity="center";
+          layout_marginTop="2%h"; 
+          elevation="0dp";
+          layout_width="45%w";
+          layout_height="45dp";
+          cardBackgroundColor="#FFF7F7F7";
+          radius="5dp";
+          {
+            LinearLayout;
+            layout_margin="0dp";
+            layout_width="fill";
+            layout_height="fill";
+            gravity="center"; 
+            id="Mary";
+            {
+              TextView;
+              textSize="14sp";
+              text="超级玛丽",
+              textColor="#333333";
+            };
+          };
+        },
+        {
+          CardView;
+          layout_gravity="center";
+          layout_marginTop="2%h"; 
+          elevation="0dp";
+          layout_width="45%w";
+          layout_height="45dp";
+          cardBackgroundColor="#FFF7F7F7";
+          radius="5dp";
+          {
+            LinearLayout;
+            layout_margin="0dp";
+            layout_width="fill";
+            layout_height="fill";
+            gravity="center"; 
+            id="white";
+            {
+              TextView;
+              textSize="14sp";
+              text="别踩白块",
+              textColor="#333333";
+            };
+          };
+        },
+        {
+          CardView;
+          layout_gravity="center";
+          layout_marginTop="2%h"; 
+          elevation="0dp";
+          layout_width="45%w";
+          layout_height="45dp";
+          cardBackgroundColor="#FFF7F7F7";
+          radius="5dp";
+          {
+            LinearLayout;
+            layout_margin="0dp";
+            layout_width="fill";
+            layout_height="fill";
+            gravity="center"; 
+            id="element";
+            {
+              TextView;
+              textSize="14sp";
+              text="3D-元素周期表",
+              textColor="#333333";
+            };
+          };
+        },
+        --第二列
+      };
+      {
+        LinearLayout;
+        orientation="vertical";
+        layout_width="48%w";
+        layout_height="fill";
+        layout_marginRight="2%w";
+        {
+          CardView;
+          layout_gravity="center";
+          layout_marginTop="2%h"; 
+          elevation="0dp";
+          layout_width="45%w";
+          layout_height="45dp";
+          cardBackgroundColor="#FFF7F7F7";
+          radius="5dp";
+          {
+            LinearLayout;
+            layout_margin="0dp";
+            layout_width="fill";
+            layout_height="fill";
+            gravity="center"; 
+            id="Thunder";
+            {
+              TextView;
+              textSize="14sp";
+              text="扫雷",
+              textColor="#333333";
+            };
+          };
+        },
+        {
+          CardView;
+          layout_gravity="center";
+          layout_marginTop="2%h"; 
+          elevation="0dp";
+          layout_width="45%w";
+          layout_height="45dp";
+          cardBackgroundColor="#FFF7F7F7";
+          radius="5dp";
+          {
+            LinearLayout;
+            layout_margin="0dp";
+            layout_width="fill";
+            layout_height="fill";
+            gravity="center"; 
+            id="bird2";
+            {
+              TextView;
+              textSize="14sp";
+              text="压扁小鸟",
+              textColor="#333333";
+            };
+          };
+        },
+        {
+          CardView;
+          layout_gravity="center";
+          layout_marginTop="2%h"; 
+          elevation="0dp";
+          layout_width="45%w";
+          layout_height="45dp";
+          cardBackgroundColor="#FFF7F7F7";
+          radius="5dp";
+          {
+            LinearLayout;
+            layout_margin="0dp";
+            layout_width="fill";
+            layout_height="fill";
+            gravity="center"; 
+            id="clever";
+            {
+              TextView;
+              textSize="14sp";
+              text="智力撑杆",
+              textColor="#333333";
+            };
+          };
+        },
+        {
+          CardView;
+          layout_gravity="center";
+          layout_marginTop="2%h"; 
+          elevation="0dp";
+          layout_width="45%w";
+          layout_height="45dp";
+          cardBackgroundColor="#FFF7F7F7";
+          radius="5dp";
+          {
+            LinearLayout;
+            layout_margin="0dp";
+            layout_width="fill";
+            layout_height="fill";
+            gravity="center"; 
+            id="close";
+            {
+              TextView;
+              textSize="14sp";
+              text="密室逃脱",
+              textColor="#333333";
+            };
+          };
+        },
+        {
+          CardView;
+          layout_gravity="center";
+          layout_marginTop="2%h"; 
+          elevation="0dp";
+          layout_width="45%w";
+          layout_height="45dp";
+          cardBackgroundColor="#FFF7F7F7";
+          radius="5dp";
+          {
+            LinearLayout;
+            layout_margin="0dp";
+            layout_width="fill";
+            layout_height="fill";
+            gravity="center"; 
+            id="Rose";
+            {
+              TextView;
+              textSize="14sp";
+              text="蔷薇花园",
+              textColor="#333333";
+            };
+          };
+        }, 
+        {
+          CardView;
+          layout_gravity="center";
+          layout_marginTop="2%h"; 
+          elevation="0dp";
+          layout_width="45%w";
+          layout_height="45dp";
+          cardBackgroundColor="#FFF7F7F7";
+          radius="5dp";
+          {
+            LinearLayout;
+            layout_margin="0dp";
+            layout_width="fill";
+            layout_height="fill";
+            gravity="center"; 
+            id="stone";
+            {
+              TextView;
+              textSize="14sp";
+              text="石头剪刀布",
+              textColor="#333333";
+            };
+          };
+        },
+        {
+          CardView;
+          layout_gravity="center";
+          layout_marginTop="2%h"; 
+          elevation="0dp";
+          layout_width="45%w";
+          layout_height="45dp";
+          cardBackgroundColor="#FFF7F7F7";
+          radius="5dp";
+          {
+            LinearLayout;
+            layout_margin="0dp";
+            layout_width="fill";
+            layout_height="fill";
+            gravity="center"; 
+            id="more";
+            {
+              TextView;
+              textSize="14sp";
+              text="更多",
+              textColor="#333333";
+            };
+          };
+        },
+      }; 
+    };
+  };
 };
-};
-};
-
-{
-LinearLayout;
-layout_marginTop="50dp";
-background="#ffffffff";
-layout_height="50dp";
-layout_width="fill";
-{
-LinearLayout;
-id="xm2";
-layout_height="fill";
-layout_width="fill";
-{
-ImageView,
-layout_width="30dp",
-layout_height="30dp",
-layout_marginLeft="10dp",
-src="drawable/bb.png",
-ColorFilter="#FF1157BB",
-layout_marginTop="10dp",
-},
-{
-TextView;
-layout_marginLeft="80dp";
-text="项目二";
-layout_gravity="center";
-textColor="#000000";
-};
-};
-};
-
-{
-LinearLayout;
-layout_marginTop="100dp";
-background="#ffffffff";
-layout_height="50dp";
-layout_width="fill";
-{
-LinearLayout;
-id="xm3";
-layout_height="fill";
-layout_width="fill";
-{
-ImageView,
-layout_width="30dp",
-layout_height="30dp",
-layout_marginLeft="10dp",
-src="drawable/bb.png",
-ColorFilter="#FF1157BB",
-layout_marginTop="10dp",
-},
-{
-TextView;
-layout_marginLeft="80dp";
-text="项目三";
-layout_gravity="center";
-textColor="#000000";
-};
-};
-};
-
-{
-LinearLayout;
-layout_marginTop="150dp";
-background="#ffffffff";
-layout_height="50dp";
-layout_width="fill";
-{
-LinearLayout;
-id="xm4";
-layout_height="fill";
-layout_width="fill";
-{
-ImageView,
-layout_width="30dp",
-layout_height="30dp",
-layout_marginLeft="10dp",
-src="drawable/bb.png",
-ColorFilter="#FF1157BB",
-layout_marginTop="10dp",
-},
-{
-TextView;
-layout_marginLeft="80dp";
-text="项目四";
-layout_gravity="center";
-textColor="#000000";
-};
-};
-};
-
-{
-LinearLayout;
-layout_marginTop="230dp";
-background="#ffffffff";
-layout_height="50dp";
-layout_width="fill";
-{
-LinearLayout;
-id="xm5";
-layout_height="fill";
-layout_width="fill";
-{
-ImageView,
-layout_width="30dp",
-layout_height="30dp",
-layout_marginLeft="10dp",
-src="drawable/bb.png",
-ColorFilter="#FF1157BB",
-layout_marginTop="10dp",
-},
-{
-TextView;
-layout_marginLeft="80dp";
-text="项目五";
-layout_gravity="center";
-textColor="#000000";
-};
-};
-};
---一个项目的宽度为50dp,一个标题的宽度为30,x*50+y*30+10,x为几个项目,y为几个标题
---当然要除去第一个标题，所有的相对位置是相对于第一个标题而言的
-  {
-    TextView;
-    layout_width="fill",
-    text="标题二",
-    textSize="12sp",
-    gravity="left",
-    textColor="#FF0083DB",
-    layout_marginTop="210dp",
-    layout_marginLeft="10dp",
-  },
-  {
-    TextView;
-    layout_width="fill",
-    text="标题三",
-    textSize="12sp",
-    gravity="left",
-    textColor="#FF0083DB",
-    layout_marginTop="290dp",
-    layout_marginLeft="10dp",
-  },
-{
---定义开关视图
-Switch;
---文字距离开关的远近
-switchPadding="65dp";
---开关宽度
-switchMinWidth="20dp";
---与开关相对应的文字
-text="夜间模式";
-layout_marginTop="320dp",
-layout_marginLeft="10dp",
-textColor="#000000";
-id="sw";
-};
-
-};
-};--第一段项目结束
-}--侧滑栏全局布局结束
-))
-sidebar.addView(sidebar2)
---波纹函数
-function 波纹(id,颜色)
-import "android.content.res.ColorStateList"
-local attrsArray = {android.R.attr.selectableItemBackgroundBorderless} 
-local typedArray =activity.obtainStyledAttributes(attrsArray) 
-ripple=typedArray.getResourceId(0,0) 
-Pretend=activity.Resources.getDrawable(ripple) 
-Pretend.setColor(ColorStateList(int[0].class{int{}},int{颜色}))
-id.setBackground(Pretend.setColor(ColorStateList(int[0].class{int{}},int{颜色})))
-end
---用法
-波纹(xm1,0xfff48FB1)
---波纹函数
-function 波纹(id,颜色)
-import "android.content.res.ColorStateList"
-local attrsArray = {android.R.attr.selectableItemBackgroundBorderless} 
-local typedArray =activity.obtainStyledAttributes(attrsArray) 
-ripple=typedArray.getResourceId(0,0) 
-Pretend=activity.Resources.getDrawable(ripple) 
-Pretend.setColor(ColorStateList(int[0].class{int{}},int{颜色}))
-id.setBackground(Pretend.setColor(ColorStateList(int[0].class{int{}},int{颜色})))
-end
---用法
-波纹(xm2,0xfff48FB1)
-function 波纹(id,颜色)
-import "android.content.res.ColorStateList"
-local attrsArray = {android.R.attr.selectableItemBackgroundBorderless} 
-local typedArray =activity.obtainStyledAttributes(attrsArray) 
-ripple=typedArray.getResourceId(0,0) 
-Pretend=activity.Resources.getDrawable(ripple) 
-Pretend.setColor(ColorStateList(int[0].class{int{}},int{颜色}))
-id.setBackground(Pretend.setColor(ColorStateList(int[0].class{int{}},int{颜色})))
-end
---用法
-波纹(xm3,0xfff48FB1)
-function 波纹(id,颜色)
-import "android.content.res.ColorStateList"
-local attrsArray = {android.R.attr.selectableItemBackgroundBorderless} 
-local typedArray =activity.obtainStyledAttributes(attrsArray) 
-ripple=typedArray.getResourceId(0,0) 
-Pretend=activity.Resources.getDrawable(ripple) 
-Pretend.setColor(ColorStateList(int[0].class{int{}},int{颜色}))
-id.setBackground(Pretend.setColor(ColorStateList(int[0].class{int{}},int{颜色})))
-end
---用法
-波纹(xm4,0xfff48FB1)
-function 波纹(id,颜色)
-import "android.content.res.ColorStateList"
-local attrsArray = {android.R.attr.selectableItemBackgroundBorderless} 
-local typedArray =activity.obtainStyledAttributes(attrsArray) 
-ripple=typedArray.getResourceId(0,0) 
-Pretend=activity.Resources.getDrawable(ripple) 
-Pretend.setColor(ColorStateList(int[0].class{int{}},int{颜色}))
-id.setBackground(Pretend.setColor(ColorStateList(int[0].class{int{}},int{颜色})))
-end
---用法
-波纹(xm5,0xfff48FB1)
-
+webView.addView(loadlayout(shamrock))
 --项目点击事件
-xm1.onClick=function()
-  弹出消息("项目一")
-end 
-xm2.onClick=function()
-  弹出消息("项目二")
-end 
-xm3.onClick=function()
-  弹出消息("项目三")
-end 
-xm4.onClick=function()
-  弹出消息("项目四")
-end 
-xm5.onClick=function()
-  弹出消息("项目五")
-end 
+two.onClick=function()
+  弹出消息("我是2048")
+end
+Thunder.onClick=function()
+  弹出消息("我是扫雷")
+end
+bird.onClick=function()
+  弹出消息("我是像素小鸟")
+end
+bird2.onClick=function()
+  弹出消息("我是压扁小鸟")
+end
+needle.onClick=function()
+  弹出消息("我是见缝插针")
+end
+clever.onClick=function()
+  弹出消息("我是智力撑杆")
+end
+line.onClick=function()
+  弹出消息("我是命悬一线")
+end
+close.onClick=function()
+  弹出消息("我是密室逃脱")
+end
+Mary.onClick=function()
+  弹出消息("我是超级玛丽")
+end
+white.onClick=function()
+  弹出消息("我是别踩白块")
+end
+Rose.onClick=function()
+  弹出消息("我是蔷薇花园")
+end
+stone.onClick=function()
+  弹出消息("我是石头剪刀布")
+end
+element.onClick=function()
+  弹出消息("我是元素周期表")
+end
+more.onClick=function()
+  弹出消息("我是更多")
+end
+--波纹函数
+function 波纹(id,颜色)
+  import "android.content.res.ColorStateList"
+  local attrsArray = {android.R.attr.selectableItemBackgroundBorderless} 
+  local typedArray =activity.obtainStyledAttributes(attrsArray) 
+  ripple=typedArray.getResourceId(0,0) 
+  Pretend=activity.Resources.getDrawable(ripple) 
+  Pretend.setColor(ColorStateList(int[0].class{int{}},int{颜色}))
+  id.setBackground(Pretend.setColor(ColorStateList(int[0].class{int{}},int{颜色})))
+end
+--用法
+波纹(two,0xfff48FB1)
+波纹(Thunder,0xfff48FB1)
+波纹(bird,0xfff48FB1)
+波纹(bird2,0xfff48FB1)
+波纹(needle,0xfff48FB1)
+波纹(clever,0xfff48FB1)
+波纹(line,0xfff48FB1)
+波纹(close,0xfff48FB1)
+波纹(Mary,0xfff48FB1)
+波纹(white,0xfff48FB1)
+波纹(Rose,0xfff48FB1)
+波纹(stone,0xfff48FB1)
+波纹(element,0xfff48FB1)
+波纹(more,0xfff48FB1)
 
+--精仿一个木函按钮，给需要的人
+--有bug请联系我：2215149392
+--或者加群：835500026
+]]
 
+tab6["幽灵助手轮翻精美布局"] = [[
+--QQ782268899
+ghost=
+{
+  LinearLayout;
+  orientation="vertical";
+  layout_height="fill";
+  layout_width="fill";
+  Focusable=true,
+  background="http://p.qpic.cn/pic_wework/1948211503/6264766f607861be2c63eba6fc0628bfb165fdfbdaa0c41d/0"; 
+  {
+    ScrollView,--纵向滚动
+    layout_width='fill';--宽
+    layout_height='fill';--高
+    {
+      LinearLayout;
+      orientation="horizontal";
+      Elevation="300dp";
+      layout_width="fill";
+      layout_height="100%h";
+      {
+        LinearLayout;
+        orientation="vertical";
+        layout_marginTop="15%h";
+        layout_width="48%w";
+        layout_height="fill";
+        layout_marginLeft="2%w";
+        --第一列
+        {
+          CardView;
+          layout_gravity="center";
+          layout_marginTop="23%h"; 
+          elevation="0dp";
+          layout_width="45%w";
+          layout_height="45dp";
+          cardBackgroundColor="0xA0FFFFFF";
+          radius="5dp";
+          {
+            LinearLayout;
+            layout_margin="0dp";
+            layout_width="fill";
+            layout_height="fill";
+            gravity="center"; 
+            id="two";
+            {
+              TextView;
+              textSize="14sp";
+              text="📚 装机精品软件",
+              textColor="#333333";
+            };
+          };
+        },
+        {
+          CardView;
+          layout_gravity="center";
+          layout_marginTop="2%h"; 
+          elevation="0dp";
+          layout_width="45%w";
+          layout_height="45dp";
+          cardBackgroundColor="#FFF7F7F7";
+          radius="5dp";
+          {
+            LinearLayout;
+            layout_margin="0dp";
+            layout_width="fill";
+            layout_height="fill";
+            gravity="center"; 
+            id="bird";
+            {
+              TextView;
+              textSize="14sp";
+              text="📽 全网蓝光影视",
+              textColor="#333333";
+            };
+          };
+        },
+        {
+          CardView;
+          layout_gravity="center";
+          layout_marginTop="2%h"; 
+          elevation="0dp";
+          layout_width="45%w";
+          layout_height="45dp";
+          cardBackgroundColor="#FFF7F7F7";
+          radius="5dp";
+          {
+            LinearLayout;
+            layout_margin="0dp";
+            layout_width="fill";
+            layout_height="fill";
+            gravity="center"; 
+            id="needle";
+            {
+              TextView;
+              textSize="14sp";
+              text="🎵 无损天籁之音",
+              textColor="#333333";
+            };
+          };
+        },
+        {
+          CardView;
+          layout_gravity="center";
+          layout_marginTop="2%h"; 
+          elevation="0dp";
+          layout_width="45%w";
+          layout_height="45dp";
+          cardBackgroundColor="#FFF7F7F7";
+          radius="5dp";
+          {
+            LinearLayout;
+            layout_margin="0dp";
+            layout_width="fill";
+            layout_height="fill";
+            gravity="center"; 
+            id="line";
+            {
+              TextView;
+              textSize="14sp";
+              text="🍁 精美图片壁纸",
+              textColor="#333333";
+            };
+          };
+        },
+        {
+          CardView;
+          layout_gravity="center";
+          layout_marginTop="2%h"; 
+          elevation="0dp";
+          layout_width="45%w";
+          layout_height="45dp";
+          cardBackgroundColor="#FFF7F7F7";
+          radius="5dp";
+          {
+            LinearLayout;
+            layout_margin="0dp";
+            layout_width="fill";
+            layout_height="fill";
+            gravity="center"; 
+            id="Mary";
+            {
+              TextView;
+              textSize="14sp";
+              text="📝 段子说说大全",
+              textColor="#333333";
+            };
+          };
+        },
+        {
+          CardView;
+          layout_gravity="center";
+          layout_marginTop="2%h"; 
+          elevation="0dp";
+          layout_width="45%w";
+          layout_height="45dp";
+          cardBackgroundColor="#FFF7F7F7";
+          radius="5dp";
+          {
+            LinearLayout;
+            layout_margin="0dp";
+            layout_width="fill";
+            layout_height="fill";
+            gravity="center"; 
+            id="white";
+            {
+              TextView;
+              textSize="14sp";
+              text="💠 特殊符号大全",
+              textColor="#333333";
+            };
+          };
+        },
+        {
+          CardView;
+          layout_gravity="center";
+          layout_marginTop="2%h"; 
+          elevation="0dp";
+          layout_width="45%w";
+          layout_height="45dp";
+          cardBackgroundColor="#FFF7F7F7";
+          radius="5dp";
+          {
+            LinearLayout;
+            layout_margin="0dp";
+            layout_width="fill";
+            layout_height="fill";
+            gravity="center"; 
+            id="element";
+            {
+              TextView;
+              textSize="14sp";
+              text="🍹 制作素材大全",
+              textColor="#333333";
+            };
+          };
+        },
+        --第二列
+      };
+      {
+        LinearLayout;
+        orientation="vertical";
+        layout_marginTop="15%h";
+        layout_width="48%w";
+        layout_height="fill";
+        layout_marginRight="2%w";
+        {
+          CardView;
+          layout_gravity="center";
+          layout_marginTop="23%h"; 
+          elevation="0dp";
+          layout_width="45%w";
+          layout_height="45dp";
+          cardBackgroundColor="#FFF7F7F7";
+          radius="5dp";
+          {
+            LinearLayout;
+            layout_margin="0dp";
+            layout_width="fill";
+            layout_height="fill";
+            gravity="center"; 
+            id="Thunder";
+            {
+              TextView;
+              textSize="14sp";
+              text="正在更新中",
+              textColor="#333333";
+            };
+          };
+        },
+        {
+          CardView;
+          layout_gravity="center";
+          layout_marginTop="2%h"; 
+          elevation="0dp";
+          layout_width="45%w";
+          layout_height="45dp";
+          cardBackgroundColor="#FFF7F7F7";
+          radius="5dp";
+          {
+            LinearLayout;
+            layout_margin="0dp";
+            layout_width="fill";
+            layout_height="fill";
+            gravity="center"; 
+            id="bird2";
+            {
+              TextView;
+              textSize="14sp";
+              text="正在更新中",
+              textColor="#333333";
+            };
+          };
+        },
+        {
+          CardView;
+          layout_gravity="center";
+          layout_marginTop="2%h"; 
+          elevation="0dp";
+          layout_width="45%w";
+          layout_height="45dp";
+          cardBackgroundColor="#FFF7F7F7";
+          radius="5dp";
+          {
+            LinearLayout;
+            layout_margin="0dp";
+            layout_width="fill";
+            layout_height="fill";
+            gravity="center"; 
+            id="clever";
+            {
+              TextView;
+              textSize="14sp";
+              text="正在更新中",
+              textColor="#333333";
+            };
+          };
+        },
+        {
+          CardView;
+          layout_gravity="center";
+          layout_marginTop="2%h"; 
+          elevation="0dp";
+          layout_width="45%w";
+          layout_height="45dp";
+          cardBackgroundColor="#FFF7F7F7";
+          radius="5dp";
+          {
+            LinearLayout;
+            layout_margin="0dp";
+            layout_width="fill";
+            layout_height="fill";
+            gravity="center"; 
+            id="close";
+            {
+              TextView;
+              textSize="14sp";
+              text="正在更新中",
+              textColor="#333333";
+            };
+          };
+        },
+        {
+          CardView;
+          layout_gravity="center";
+          layout_marginTop="2%h"; 
+          elevation="0dp";
+          layout_width="45%w";
+          layout_height="45dp";
+          cardBackgroundColor="#FFF7F7F7";
+          radius="5dp";
+          {
+            LinearLayout;
+            layout_margin="0dp";
+            layout_width="fill";
+            layout_height="fill";
+            gravity="center"; 
+            id="Rose";
+            {
+              TextView;
+              textSize="14sp";
+              text="正在更新中",
+              textColor="#333333";
+            };
+          };
+        }, 
+        {
+          CardView;
+          layout_gravity="center";
+          layout_marginTop="2%h"; 
+          elevation="0dp";
+          layout_width="45%w";
+          layout_height="45dp";
+          cardBackgroundColor="#FFF7F7F7";
+          radius="5dp";
+          {
+            LinearLayout;
+            layout_margin="0dp";
+            layout_width="fill";
+            layout_height="fill";
+            gravity="center"; 
+            id="stone";
+            {
+              TextView;
+              textSize="14sp";
+              text="正在更新中",
+              textColor="#333333";
+            };
+          };
+        },
+        {
+          CardView;
+          layout_gravity="center";
+          layout_marginTop="2%h"; 
+          elevation="0dp";
+          layout_width="45%w";
+          layout_height="45dp";
+          cardBackgroundColor="#FFF7F7F7";
+          radius="5dp";
+          {
+            LinearLayout;
+            layout_margin="0dp";
+            layout_width="fill";
+            layout_height="fill";
+            gravity="center"; 
+            id="more";
+            {
+              TextView;
+              textSize="14sp";
+              text="查看更多",
+              textColor="#333333";
+            };
+          };
+        },
+      }; 
+    };
+  };
+};
+webView.addView(loadlayout(ghost))
+--项目点击事件
+two.onClick=function()
+  弹出消息("点击成功，欢迎进入")
+  进入子页面("子页面二")
+end
+Thunder.onClick=function()
+  弹出消息("欢迎进入")
+  进入子页面("子页面")
+end
+bird.onClick=function()
+  弹出消息("呃呃")
+end
+bird2.onClick=function()
+  弹出消息("呃呃")
+end
+needle.onClick=function()
+  弹出消息("呃呃")
+end
+clever.onClick=function()
+  弹出消息("呃呃")
+end
+line.onClick=function()
+  弹出消息("呃呃")
+end
+close.onClick=function()
+  弹出消息("呃呃")
+end
+Mary.onClick=function()
+  弹出消息("呃呃")
+end
+white.onClick=function()
+  弹出消息("呃呃")
+end
+Rose.onClick=function()
+  弹出消息("呃呃")
+end
+stone.onClick=function()
+  弹出消息("呃呃")
+end
+element.onClick=function()
+  弹出消息("呃呃")
+end
+more.onClick=function()
+  弹出消息("呃呃")
+end
+--波纹函数
+function 波纹(id,颜色)
+  import "android.content.res.ColorStateList"
+  local attrsArray = {android.R.attr.selectableItemBackgroundBorderless} 
+  local typedArray =activity.obtainStyledAttributes(attrsArray) 
+  ripple=typedArray.getResourceId(0,0) 
+  Pretend=activity.Resources.getDrawable(ripple) 
+  Pretend.setColor(ColorStateList(int[0].class{int{}},int{颜色}))
+  id.setBackground(Pretend.setColor(ColorStateList(int[0].class{int{}},int{颜色})))
+end
+--用法
+波纹(two,0xfff48FB1)
+波纹(Thunder,0xfff48FB1)
+波纹(bird,0xfff48FB1)
+波纹(bird2,0xfff48FB1)
+波纹(needle,0xfff48FB1)
+波纹(clever,0xfff48FB1)
+波纹(line,0xfff48FB1)
+波纹(close,0xfff48FB1)
+波纹(Mary,0xfff48FB1)
+波纹(white,0xfff48FB1)
+波纹(Rose,0xfff48FB1)
+波纹(stone,0xfff48FB1)
+波纹(element,0xfff48FB1)
+波纹(more,0xfff48FB1)
 
+--QQ782268899
+gt=
+{
+  RelativeLayout;
+  layout_width='fill';--布局宽度
+  layout_height='fill';--布局高度
+  {
+    LinearLayout;
+    layout_marginTop="3%h";
+    layout_width='fill';--宽
+    layout_height='220dp';--高
+    {
+      PageView;
+      id="hd";
+      pages={
+        {
+          LinearLayout;
+          orientation='vertical';--重力属性
+          layout_width='fill';--布局宽度
+          layout_height='wrap';--布局高度
+          {
+            CardView;--卡片控件
+            layout_margin='10dp';--卡片边距
+            elevation='2dp';--阴影属性
+            layout_width='fill';--卡片宽度
+            layout_height='wrap';--卡片高度
+            radius='15dp';--卡片圆角
+            {
+              ImageView;--图片控件
+              src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1541524835207&di=fadb2c0bdb4e437a569f572bb01144fd&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F2018-04-25%2F5ae01d0ee84dd.jpg';--图片路径
+              layout_width='fill';--图片宽度
+              layout_height='wrap';--图片高度
+              scaleType='fitXY';--图片显示类型
+            };
+          };
+        };
+        {
+          LinearLayout;
+          orientation='vertical';--重力属性
+          layout_width='fill';--布局宽度
+          layout_height='wrap';--布局高度
+          {
+            CardView;--卡片控件
+            layout_margin='10dp';--卡片边距
+            elevation='2dp';--阴影属性
+            layout_width='fill';--卡片宽度
+            layout_height='wrap';--卡片高度
+            radius='15dp';--卡片圆角
+            {
+              ImageView;--图片控件
+              src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1541525450065&di=58195025c46b040570065e74cde2e336&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F2018-04-02%2F5ac1d6191885c.jpg';--图片路径
+              layout_width='fill';--图片宽度
+              layout_height='wrap';--图片高度
+              scaleType='fitXY';--图片显示类型
+            };
+          };
+        };
+        {
+          LinearLayout;
+          orientation='vertical';--重力属性
+          layout_width='fill';--布局宽度
+          layout_height='wrap';--布局高度
+          {
+            CardView;--卡片控件
+            layout_margin='10dp';--卡片边距
+            elevation='2dp';--阴影属性
+            layout_width='fill';--卡片宽度
+            layout_height='wrap';--卡片高度
+            radius='15dp';--卡片圆角
+            {
+              ImageView;--图片控件
+              src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1541524835891&di=ea9ffd38ec7e2b0d47bd54134da0793d&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F2018-01-12%2F5a5811dc875b5.jpg';--图片路径
+              layout_width='fill';--图片宽度
+              layout_height='wrap';--图片高度
+              scaleType='fitXY';--图片显示类型
+            };
+          };
+        };
+        {
+          LinearLayout;
+          orientation='vertical';--重力属性
+          layout_width='fill';--布局宽度
+          layout_height='wrap';--布局高度
+          {
+            CardView;--卡片控件
+            layout_margin='10dp';--卡片边距
+            elevation='2dp';--阴影属性
+            layout_width='fill';--卡片宽度
+            layout_height='wrap';--卡片高度
+            radius='15dp';--卡片圆角
+            {
+              ImageView;--图片控件
+              src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1541525723789&di=588d3d8d07d922436ca501188c240ecc&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F2018-01-22%2F5a65b39382e90.jpg';--图片路径
+              layout_width='fill';--图片宽度
+              layout_height='wrap';--图片高度
+              scaleType='fitXY';--图片显示类型
+            };
+          };
+        };
+      };
+
+    };
+  };
+  {
+    LinearLayout;
+    orientation='horizontal';--重力属性
+    layout_width='fill';--布局宽度
+    layout_height='wrap';--布局高度
+    layout_marginTop='110dp';--布局顶距
+    {
+      TextView;--文本控件
+      layout_width='fill';--文本宽度
+      layout_height='45dp';--文本高度
+      gravity='center';--重力属性
+      textColor='#FFFFFFFF';--文字颜色
+      text='';--显示的文字
+      textSize='8sp';--文字大小
+      id="ym1";
+    };
+    {
+      TextView;--文本控件
+      layout_width='5%w';--文本宽度
+      layout_height='45dp';--文本高度
+      gravity='center';--重力属性
+      textColor='#FFFFFFFF';--文字颜色
+      text='';--显示的文字
+      textSize='8sp';--文字大小
+      id="ym2";
+    };
+    {
+      TextView;--文本控件
+      layout_width='5%w';--文本宽度
+      layout_height='45dp';--文本高度
+      gravity='center';--重力属性
+      textColor='#FFFFFFFF';--文字颜色
+      text='';--显示的文字
+      textSize='8sp';--文字大小
+      id="ym3";
+    };
+    {
+      TextView;--文本控件
+      layout_width='5%w';--文本宽度
+      layout_height='45dp';--文本高度
+      gravity='center';--重力属性
+      textColor='#FFFFFFFF';--文字颜色
+      text='';--显示的文字
+      textSize='8sp';--文字大小
+      id="ym4";
+    };
+  };
+};
+webView.addView(loadlayout(gt))
+hd.setOnPageChangeListener(PageView.OnPageChangeListener{
+  onPageScrolled=function(a,b,c)
+    if c==0 then
+      if a==0 then
+        ym1.setTextColor(0xFFFFFFFF) 
+        ym2.setTextColor(0x57FFFFFF) 
+        ym3.setTextColor(0x57FFFFFF) 
+        ym4.setTextColor(0x57FFFFFF)
+        task(3000,function()
+          hd.showPage(1)
+        end)
+      elseif a==1 then
+        ym1.setTextColor(0x57FFFFFF) 
+        ym2.setTextColor(0xFFFFFFFF) 
+        ym3.setTextColor(0x57FFFFFF) 
+        ym4.setTextColor(0x57FFFFFF)
+        task(4000,function()
+          hd.showPage(2)
+        end)
+      elseif a==2 then
+        ym1.setTextColor(0x57FFFFFF) 
+        ym2.setTextColor(0x57FFFFFF) 
+        ym3.setTextColor(0xFFFFFFFF) 
+        ym4.setTextColor(0x57FFFFFF)
+        task(4000,function()
+          hd.showPage(3)
+        end)
+      elseif a==3 then
+        ym1.setTextColor(0x57FFFFFF) 
+        ym2.setTextColor(0x57FFFFFF) 
+        ym3.setTextColor(0x57FFFFFF) 
+        ym4.setTextColor(0xFFFFFFFF)
+        task(4000,function()
+          hd.showPage(0)
+        end)
+      end
+    end
+  end})
 
 ]]
+
+
 
 【数据表】
 
