@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+
+<p>
+【项目表】{"一个侧滑布局","test2","test3"}【项目表】
+【数据表】
+tab6={}
+tab6["一个侧滑布局"]=[[
+--程序启动时会执行的事件
+--导入神马玩意，我也不懂，不要删除就行
+require"import"
+import "android.app.*"
+import "android.os.*"
+import "android.widget.*"
+import "android.view.*"
+import "android.text.*"
+sidebar2=(loadlayout(
+{--定义侧滑栏全局布局
+  LinearLayout,
+  layout_width="fill",
+  layout_height="fill",
+  orientation="vertical",
+  backgroundColor="#FFFFFF",
+ {
+ImageView;--图片控件
+src='https://i.loli.net/2019/05/20/5ce19d759837665725.png';--图片路径
+layout_width='fill';--图片宽度
+layout_height='35%h';--图片高度
+--layout_gravity='top';--重力属性
+layout_marginTop='-30dp';
+
+}; 
+  {
+    TextView;
+    layout_width="fill",
+    text="标题一",
+    textSize="12sp",
+    gravity="left",
+    textColor="#FF0083DB",
+    layout_marginTop="10dp",
+    layout_marginLeft="10dp",
+  },
+{
+  LinearLayout,
+  layout_width="fill",
+  layout_height="fill",
+  orientation="vertical",
+{
+RelativeLayout;
+layout_width="fill";
+layout_height="fill";
+layout_marginTop="10dp";
+{
+LinearLayout;
+background="#ffffffff";
+layout_height="50dp";
+layout_width="fill";
+{
+LinearLayout;
+id="xm1";
+layout_height="fill";
+layout_width="fill";
+{
+ImageView,
+layout_width="30dp",
+layout_height="30dp",
+layout_marginLeft="10dp",
+src="drawable/bb.png",
+ColorFilter="#FF1157BB",
+layout_marginTop="10dp",
+},
+{
+TextView;
+layout_marginLeft="80dp";
+text="项目一";
+layout_gravity="center";
+textColor="#000000";
+};
+};
+};
+
+{
+LinearLayout;
+layout_marginTop="50dp";
+background="#ffffffff";
+layout_height="50dp";
+layout_width="fill";
+{
+LinearLayout;
+id="xm2";
+layout_height="fill";
+layout_width="fill";
+{
+ImageView,
+layout_width="30dp",
+layout_height="30dp",
+layout_marginLeft="10dp",
+src="drawable/bb.png",
+ColorFilter="#FF1157BB",
+layout_marginTop="10dp",
+},
+{
+TextView;
+layout_marginLeft="80dp";
+text="项目二";
+layout_gravity="center";
+textColor="#000000";
+};
+};
+};
+
+{
+LinearLayout;
+layout_marginTop="100dp";
+background="#ffffffff";
+layout_height="50dp";
+layout_width="fill";
+{
+LinearLayout;
+id="xm3";
+layout_height="fill";
+layout_width="fill";
+{
+ImageView,
+layout_width="30dp",
+layout_height="30dp",
+layout_marginLeft="10dp",
+src="drawable/bb.png",
+ColorFilter="#FF1157BB",
+layout_marginTop="10dp",
+},
+{
+TextView;
+layout_marginLeft="80dp";
+text="项目三";
+layout_gravity="center";
+textColor="#000000";
+};
+};
+};
+
+{
+LinearLayout;
+layout_marginTop="150dp";
+background="#ffffffff";
+layout_height="50dp";
+layout_width="fill";
+{
+LinearLayout;
+id="xm4";
+layout_height="fill";
+layout_width="fill";
+{
+ImageView,
+layout_width="30dp",
+layout_height="30dp",
+layout_marginLeft="10dp",
+src="drawable/bb.png",
+ColorFilter="#FF1157BB",
+layout_marginTop="10dp",
+},
+{
+TextView;
+layout_marginLeft="80dp";
+text="项目四";
+layout_gravity="center";
+textColor="#000000";
+};
+};
+};
+
+{
+LinearLayout;
+layout_marginTop="230dp";
+background="#ffffffff";
+layout_height="50dp";
+layout_width="fill";
+{
+LinearLayout;
+id="xm5";
+layout_height="fill";
+layout_width="fill";
+{
+ImageView,
+layout_width="30dp",
+layout_height="30dp",
+layout_marginLeft="10dp",
+src="drawable/bb.png",
+ColorFilter="#FF1157BB",
+layout_marginTop="10dp",
+},
+{
+TextView;
+layout_marginLeft="80dp";
+text="项目五";
+layout_gravity="center";
+textColor="#000000";
+};
+};
+};
+--一个项目的宽度为50dp,一个标题的宽度为30,x*50+y*30+10,x为几个项目,y为几个标题
+--当然要除去第一个标题，所有的相对位置是相对于第一个标题而言的
+  {
+    TextView;
+    layout_width="fill",
+    text="标题二",
+    textSize="12sp",
+    gravity="left",
+    textColor="#FF0083DB",
+    layout_marginTop="210dp",
+    layout_marginLeft="10dp",
+  },
+  {
+    TextView;
+    layout_width="fill",
+    text="标题三",
+    textSize="12sp",
+    gravity="left",
+    textColor="#FF0083DB",
+    layout_marginTop="290dp",
+    layout_marginLeft="10dp",
+  },
+{
+--定义开关视图
+Switch;
+--文字距离开关的远近
+switchPadding="65dp";
+--开关宽度
+switchMinWidth="20dp";
+--与开关相对应的文字
+text="夜间模式";
+layout_marginTop="320dp",
+layout_marginLeft="10dp",
+textColor="#000000";
+id="sw";
+};
+
+};
+};--第一段项目结束
+}--侧滑栏全局布局结束
+))
+sidebar.addView(sidebar2)
+--波纹函数
+function 波纹(id,颜色)
+import "android.content.res.ColorStateList"
+local attrsArray = {android.R.attr.selectableItemBackgroundBorderless} 
+local typedArray =activity.obtainStyledAttributes(attrsArray) 
+ripple=typedArray.getResourceId(0,0) 
+Pretend=activity.Resources.getDrawable(ripple) 
+Pretend.setColor(ColorStateList(int[0].class{int{}},int{颜色}))
+id.setBackground(Pretend.setColor(ColorStateList(int[0].class{int{}},int{颜色})))
+end
+--用法
+波纹(xm1,0xfff48FB1)
+--波纹函数
+function 波纹(id,颜色)
+import "android.content.res.ColorStateList"
+local attrsArray = {android.R.attr.selectableItemBackgroundBorderless} 
+local typedArray =activity.obtainStyledAttributes(attrsArray) 
+ripple=typedArray.getResourceId(0,0) 
+Pretend=activity.Resources.getDrawable(ripple) 
+Pretend.setColor(ColorStateList(int[0].class{int{}},int{颜色}))
+id.setBackground(Pretend.setColor(ColorStateList(int[0].class{int{}},int{颜色})))
+end
+--用法
+波纹(xm2,0xfff48FB1)
+function 波纹(id,颜色)
+import "android.content.res.ColorStateList"
+local attrsArray = {android.R.attr.selectableItemBackgroundBorderless} 
+local typedArray =activity.obtainStyledAttributes(attrsArray) 
+ripple=typedArray.getResourceId(0,0) 
+Pretend=activity.Resources.getDrawable(ripple) 
+Pretend.setColor(ColorStateList(int[0].class{int{}},int{颜色}))
+id.setBackground(Pretend.setColor(ColorStateList(int[0].class{int{}},int{颜色})))
+end
+--用法
+波纹(xm3,0xfff48FB1)
+function 波纹(id,颜色)
+import "android.content.res.ColorStateList"
+local attrsArray = {android.R.attr.selectableItemBackgroundBorderless} 
+local typedArray =activity.obtainStyledAttributes(attrsArray) 
+ripple=typedArray.getResourceId(0,0) 
+Pretend=activity.Resources.getDrawable(ripple) 
+Pretend.setColor(ColorStateList(int[0].class{int{}},int{颜色}))
+id.setBackground(Pretend.setColor(ColorStateList(int[0].class{int{}},int{颜色})))
+end
+--用法
+波纹(xm4,0xfff48FB1)
+function 波纹(id,颜色)
+import "android.content.res.ColorStateList"
+local attrsArray = {android.R.attr.selectableItemBackgroundBorderless} 
+local typedArray =activity.obtainStyledAttributes(attrsArray) 
+ripple=typedArray.getResourceId(0,0) 
+Pretend=activity.Resources.getDrawable(ripple) 
+Pretend.setColor(ColorStateList(int[0].class{int{}},int{颜色}))
+id.setBackground(Pretend.setColor(ColorStateList(int[0].class{int{}},int{颜色})))
+end
+--用法
+波纹(xm5,0xfff48FB1)
+
+--项目点击事件
+xm1.onClick=function()
+  弹出消息("项目一")
+end 
+xm2.onClick=function()
+  弹出消息("项目二")
+end 
+xm3.onClick=function()
+  弹出消息("项目三")
+end 
+xm4.onClick=function()
+  弹出消息("项目四")
+end 
+xm5.onClick=function()
+  弹出消息("项目五")
+end 
+
+
+
+
+]]
+
+【数据表】
+
+</p>
+</body>
+</html>
