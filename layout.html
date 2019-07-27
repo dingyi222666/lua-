@@ -6,7 +6,7 @@
 <body>
 
 <p>
-【项目表】{"精仿一个木函按钮","幽灵助手轮翻精美布局","幽灵设计布局","一个布局"}【项目表】
+【项目表】{"精仿一个木函按钮","幽灵助手轮翻精美布局","幽灵设计布局","一个布局","分享进入软件布局"}【项目表】
 【数据表】
 tab6={}
 tab6["精仿一个木函按钮"]=[[
@@ -2094,6 +2094,193 @@ k9.onClick=function()
   print('点击k9')
 end
 
+  ]]
+  tab6[["分享进入软件布局"]]=[[
+  --小米布局QQ80557013
+layt=
+{
+  DrawerLayout;
+  id="Drawer";
+  layout_width="fill";
+  layout_height="fill";
+ {
+  LinearLayout;
+  layout_height="fill";
+  layout_width="fill";
+  orientation="vertical";
+--窗口一开始布局！！！！！
+{
+  LinearLayout;
+  orientation="vertical";
+  BackgroundColor="#FFEEEEEE";
+  layout_width="fill";
+  layout_height="fill";
+{
+  LinearLayout;
+--  BackgroundColor="#FF99CCCC";
+  orientation="vertical";
+  layout_width="95%w";
+  layout_height="190dp";
+  layout_gravity="center";
+  layout_marginTop="2%h";
+  {
+    TextView;
+    layout_width="fill",
+    text="免责声明",
+    textSize="18sp",
+    gravity='center';--重力属性
+    textColor="#FF0083DB",
+    layout_marginTop="10dp",
+    layout_marginLeft="0dp",
+    };
+  {
+    TextView;
+    layout_width="fill",
+    text="本人开发的所有程序仅限用于交流学习，请勿用于任何非法途径\n本人保留一切追究责任的权利\n在使用之前请通过QQ分享到五个200人以上的QQ群\n谢谢您的配合！",
+    textSize="15sp",
+    gravity='center';--重力属性
+    textColor="#FF333333",
+    layout_marginTop="30dp",
+    layout_marginLeft="0dp",
+    };
+  };
+{
+    LinearLayout;
+    orientation='vertical';--重力属性
+    layout_width='fill';--布局宽度
+    layout_height='fill';--布局高度
+    {
+      LinearLayout;
+      orientation='horizontal';--重力属性
+      layout_width='fill';--布局宽度
+      layout_height='0dp';--布局高度
+      background='#FFFFFFFF';--布局背景颜色(或者图片路径)
+    };
+{
+LinearLayout;
+orientation='horizontal';--重力属性
+layout_margin='14dp';--布局边距
+{
+CardView;--卡片控件
+--layout_marginTop='-25dp';--布局底距  
+layout_margin='10dp';--卡片边距
+elevation='0dp';--阴影属性
+layout_width='25%w';--卡片宽度
+CardBackgroundColor='#00FFFFFF';--卡片背景颜色
+layout_height='25%w';--卡片高度
+radius='10dp';--卡片圆角
+{
+LinearLayout;
+gravity='center';--重力属性
+orientation='vertical';--重力属性
+layout_width='fill';--布局宽度
+layout_height='fill';--布局高度
+onClick=function()
+ 联系QQ(80557013) 
+end,
+{
+ImageView;--图片控件
+src='image1.png';--图片路径
+layout_width='50dp';--图片宽度
+layout_height='50dp';--图片高度
+scaleType='fitXY';--图片显示类型
+ColorFilter="#00FFAB91";--图片着色
+};
+{
+TextView;--文本控件
+layout_marginTop='3dp';--布局顶距
+textColor='#FF6A6A6A';--文字颜色
+text='联系作者';--显示的文字
+textSize='15sp';--文字大小
+};
+};
+};
+{
+CardView;--卡片控件
+layout_margin='10dp';--卡片边距
+elevation='0dp';--阴影属性
+layout_width='25%w';--卡片宽度
+CardBackgroundColor='#00FFFFFF';--卡片背景颜色
+layout_height='25%w';--卡片高度
+radius='10dp';--卡片圆角
+{
+LinearLayout;
+gravity='center';--重力属性
+orientation='vertical';--重力属性
+layout_width='fill';--布局宽度
+layout_height='fill';--布局高度
+onClick=function()
+ 加QQ群(981050168) 
+end,
+{
+ImageView;--图片控件
+src='image2.png';--图片路径
+layout_width='50dp';--图片宽度
+layout_height='50dp';--图片高度
+scaleType='fitXY';--图片显示类型
+ColorFilter="#00FFAB91";--图片着色
+};
+{
+TextView;--文本控件
+layout_marginTop='3dp';--布局顶距
+textColor='#FF6A6A6A';--文字颜色
+text='加入交流群';--显示的文字
+textSize='15sp';--文字大小
+};
+};
+};
+{
+CardView;--卡片控件
+layout_margin='10dp';--卡片边距
+elevation='0dp';--阴影属性
+layout_width='25%w';--卡片宽度
+CardBackgroundColor='#00FFFFFF';--卡片背景颜色
+layout_height='25%w';--卡片高度
+radius='10dp';--卡片圆角
+{
+LinearLayout;
+gravity='center';--重力属性
+orientation='vertical';--重力属性
+layout_width='fill';--布局宽度
+layout_height='fill';--布局高度
+id="m2";
+{
+ImageView;--图片控件
+src='image3.png';--图片路径
+layout_width='50dp';--图片宽度
+layout_height='50dp';--图片高度
+scaleType='fitXY';--图片显示类型
+ColorFilter="#00FFAB91";--图片着色
+};
+{
+TextView;--文本控件
+layout_marginTop='3dp';--布局顶距
+textColor='#FF6A6A6A';--文字颜色
+text='进入软件';--显示的文字
+textSize='15sp';--文字大小
+};
+};
+};
+};
+};
+};
+};
+};
+--小米布局QQ80557013
+webView.addView(loadlayout(layt))
+
+
+
+m2.onClick=function()
+弹出消息("分享成功，欢迎进入")
+end
+
+
+
+
+
+
+--小米布局QQ80557013
   ]]
 
 【数据表】
